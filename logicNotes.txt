@@ -1,0 +1,9 @@
+WBC Trials NCIT Conditionals:
+	>=, =, <=, OR, AND
+	C51948 = WBC
+	C8644 = B Acute Lymphoblastic Leukemia
+	C25150 = Age
+	C5440 = Central Nervous System Leukemia
+	C9277 = Testicular Leukemia
+	C15370 = Steroid Therapy
+	Uses WBC, Age, Cancer_Site, Treatment_History
