@@ -1,4 +1,5 @@
 import pandas
+from distutils.util import strtobool
 
 patientData = pandas.read_csv("../SMC Challenge 6/Dataset 2 Simplified.csv")
 eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_WBC_Trials_First.xlsx")
@@ -18,13 +19,48 @@ for i, _ in enumerate(patientData.values[0:1]):
                     logicList.append(word)
                 elif "AND" or "OR" in word:
                     logicList.append(word)
-                    logicNum += 1
                 else:
                     logicList[logicNum] = logicList[logicNum] + word
                     logicNum += 1
-            logicStatement = " ".join(logicList)
-            if "AND" in logicStatement or "OR" in logicStatement:
-                print(logicStatement)
+            if "AND" in logicList or "OR" in logicList:
+                print(logicList)
+                for k in range(0, len(logicList)):
+                    code = ""
+                    value = ""
+                    if ">=" in logicList[k]:
+                        code = logicList[k].split(">=")[0]
+                        value = logicList[k].split(">=")[1]
+                    elif "<=" in logicList[k]:
+                        code = logicList[k].split("<=")[0]
+                        value = logicList[k].split("<=")[1]
+                    elif "<" in logicList[k]:
+                        code = logicList[k].split("<")[0]
+                        value = logicList[k].split("<")[1]
+                    elif ">" in logicList[k]:
+                        code = logicList[k].split(">")[0]
+                        value = logicList[k].split(">")[1]
+                    elif "=" in logicList[k]:
+                        code = logicList[k].split("=")[0]
+                        value = logicList[k].split("=")[1]
+                    else:
+                        print("Error in splitting code and value from the following logicList")
+                        print(logicList)
+                        exit()
+                    if "C25150" in code:
+                        if patientData.Age.values[i] >= int(value):
+                            logicList[k] = "True"
+                        else:
+                            logicList[k] = "False"
+                    elif "C8644" in code:
+                        if "B Acute Lymphoblastic Leukemia" in str(patientData.Treatment_History_Boolean.values[i]):
+                            logicList[k] = "True"
+                        else:
+                            logicList[k] = "False"
+                    print(logicList)
+                    exit()
+                # s1 = "0"
+                # s2 = "1"
+                # print(strtobool(s1) or strtobool(s2))
 
         # if "C51948" in eligibilityFile.NCIT.values[j]:
         #     patientWBC = patientData.WBC.values[i]
