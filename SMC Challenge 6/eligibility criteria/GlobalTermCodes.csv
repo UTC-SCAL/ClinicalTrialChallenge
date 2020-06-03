@@ -1,0 +1,262 @@
+Term,Code
+Vagina,C12407
+Unknown,C17998
+Tumor Progression,C17609
+Treatment Completed as Prescribed,C105740
+Total Number,C127787
+Total Abdominal Hysterectomy with Bilateral Salpingo-Oophorectomy,C51761
+Topotecan,C1413
+Thorax,C12799
+Testis,C12412
+Systemic Steroid,C80510
+Systemic Chemotherapy,C64261
+Steroid Therapy,C15370
+Standard Therapy (Best Practice),C94396
+Stable Disease Minimum Duration,C98783
+Sorafenib,C61948
+Sex Cord-Stromal Tumor,C3794
+Selective Estrogen Receptor Modulator,C1821
+Residual Disease ,C4809
+Renal Cell Carcinoma,C9385
+Recurrent Disease,C38155
+Receptor Tyrosine Kinase Inhibition,C40704
+Radioembolization,C93340
+Radical Hysterectomy,C94470
+Radiation to > 25% of Bone Marrow ,No C code
+Radiation Therapy,C15313
+Prostate Cancer cT1a TNM Finding v7,C89211
+Prostate,C12410
+Prior Therapy,C16124
+Prior systemic chemotherapy for Current Cancer,No C code
+Prior Surgery,C16169
+Prior Radiation Therapy ,C15477
+Prior Invasive Malignancy of Other Sites,No C code
+Prior Invasive Malignancy,No C code
+Prior Immunotherapy,C16168
+Prior Hormone Therapy,C16175
+Prior Chemotherapy,C16171
+Prior,C16124
+Primary Peritoneal Carcinoma,C40022
+Poly (ADP-Ribose) Polymerase Inhibitor,C62554
+Pelvis,C12767
+Pelvic Exenteration,C91837
+Partial,C25378
+Pancreas,C12393
+Oxaliplatin,C1181
+Ovarian Neoplasm,C4984
+Other Investigtional Agent,No C code
+Nitrosourea Compound,C699
+Neoadjuvant Therapy,C15665
+Nab-paclitaxel,C2688
+Mitomycin,C1820
+Mild Adverse Event,C41338
+Metastatic Malignant Neoplasm in the Brain,C3813
+Melanoma,C3224
+Mediastinum,C12748
+Malignant Skin Neoplasm, C2920
+Malignant Lung Neoplasm,C7377
+Malignant Glioma,C4822
+Lung,C12468
+Local Ablation Therapy,C20985
+Lobectomy of Liver,C51555
+Limited Radiation Therapy,C54225
+Irinotecan,C62040
+Investigational New Drug,C49135
+Intrathecal Chemotherapy,C15750
+Immunotherapy,C15262
+Hydroxyurea,C560
+Hepatic Enzyme Inducing Antiepileptic Drugs,No C code
+Gemcitabine,C66876
+Fluoropyrimidine,C94728
+Fine-Needle Aspiration,C15361
+Fallopian Tube Neoplasm,C3032
+Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitor ,C2167
+Elimination Half Life,C70915
+Elapsed Time,C82572
+Duration of Administration,C69282
+Drug Known to Affect Modafinil Metabolism,No C code
+Disease-Free Survival,C17751
+Dinaciclib (SHC 727965),C78854
+Diffuse Intrinsic Pontine Glioma,C94764
+Decitabine,C981
+Cytarabine,C408
+Current Therapy,C85582
+Current,C25471
+Curative Surgery,C38047
+Core Biopsy,C15680
+Consolidation Therapy,C15679
+Complete Remission,C4870
+Complete Recovery,C82467
+Complete Excision,C51934
+CNS Stimulant,C47795
+Chest,C25389
+Chemotherapy Regimen Used to Treat Non-Small Cell Lung Carcinoma,C63360
+Chemotherapy Regimen Used to Treat Acute Myeloid Leukemia,C63589
+Chemotherapy,C15632
+Chemoembolization,C15752
+Cervix Uteri,C12311
+Cervical Carcinoma,C9039
+Breast,C12971
+Bone Marrow,C12431
+Bladder,C12414
+Biological Therapy,C15187
+Bilateral Diagnostic Mammogram,C137937
+Bilateral,C13332
+Azacitidine,C288
+Aromatase Inhibitor,C1740
+Antineoplastic Agent,C274
+Antidepressant Agent,C265
+Anticoagulation,C16299
+Androgen Suppression,C15676
+Allergic Reaction,C114476
+Adjuvant Therapy,C15675
+Adjuvant Chemotherapy,C15360
+Abdomen,C12664
+Growth Factor,C20424
+Leukocyte,C12529
+Leukocyte Count,C51948
+HLA Matching,C68707
+Past Week,C95402
+Age,C25150
+Testicular Leukemia,C9277
+Central Nervous System Leukemia,C5440
+Circulating Plasma Cell,C114278
+Pegfilgrastim,C1854
+Plasma Cell Count,C128974
+B Acute Lymphoblastic Leukemia,C8644
+Platelet Count,C51951
+Platelet Transfusion,C15366
+Blood Cell Count,C28133
+Blood Cell Count with Differential,C98494
+Bone Marrow Involvement,C8288
+Neoplastic Plasma Cells More than 50 Percent of Bone Marrow Nucleated Cells,C41036
+AIDS-Related Hodgkin Lymphoma,C9279
+Neutrophil Count 1000,C53271
+Neutrophil Count 500,C53270
+Consecutive,C47939
+Three or Four Days,C126450
+Recurrent Hematologic Malignancy,C27358
+Lymphoma ,C3208
+Chronic Lymphocytic Leukemia,C3163
+Plasmacytosis,C96278
+Protocol Agent ,C41161
+Solid Neoplasm,C9292
+FOLFOX-6 Regimen,C63591
+AGE,C25150
+Central Nervous System Lymphoma , C9301
+ECOG performance Status,C102408
+ECOG Performance Status 0,C105722
+ECOG Performance Status 1,C105723
+ECOG Performance Status 2,C105725
+ECOG Performance Status 3,C105726
+ECOG Performance Status 4,C105727
+ECOG Performance Status 5,C105728
+History and Physical Exam,C135566
+Hospitalization,C25179
+Karnofsky Performance Status,C28013
+Karnofsky Performance Status 0,C105720
+Karnofsky Performance Status 10,C105718
+Karnofsky Performance Status 100,C105707
+Karnofsky Performance Status 20,C105716
+Karnofsky Performance Status 30,C105715
+Karnofsky Performance Status 40,C105714
+Karnofsky Performance Status 50,C105713
+Karnofsky Performance Status 60,C105712
+Karnofsky Performance Status 70,C105711
+Karnofsky Performance Status 80,C105710
+Karnofsky Performance Status 90,C105709
+KPS Scale - Karnofsky Performance Status ,C100417
+Lansky Performance Status 0,C70538
+Lansky Performance Status 10,C70539
+Lansky Performance Status 100,C69426
+Lansky Performance Status 20,C70540
+Lansky Performance Status 30,C70541
+Lansky Performance Status 40,C70542
+Lansky Performance Status 50,C69421
+Lansky Performance Status 60,C69422
+Lansky Performance Status 70,C69423
+Lansky Performance Status 80,C69424
+Lansky Performance Status 90,C69425
+Lansky Play-Performance Status,C38144
+Life Expectancy Greater than Six Months,C143160
+Life Expectancy of an Individual,C99547
+Physical Examination,C20989
+Plasma Cell Myeloma ,C3242
+Zubrod Performance Status,C25400
+Zubrod Performance Status 0,C19998
+Zubrod Performance Status 1,C19999
+Zubrod Performance Status 2,C17846
+Zubrod Performance Status 3,C17847
+Zubrod Performance Status 4,C17848
+Zubrod Performance Status 5,C20000
+HIV Positivity,C15175
+AIDS ,C2851
+Immunocompromised  ,C14139
+highly active antiretroviral therapy (HAART),C94631
+CD4 Expressing Cell Count (CD4), C103810
+AIDS-Related Disorder , C4991
+Healthy ,C115935
+Hepatitis B Virus Postivie,C141405
+Hepatitis C Virus Positive,C129452
+Cytochrome P450 3A4 Inhibitor,C111373
+Cytochrome P450 3A4 Inducer ,C111374
+HIV Viral Load Measurement,C92544
+Hepatitis,C3095
+Hepatitis A Infection,C3096
+Zidovudine,C947
+Stavudine,C1428
+HIV-1 Load,C19554
+Erythropoietin,C20429
+Granulocyte Colony Stimulating Factor,C26078
+HIV Protease Inhibitor,C97366
+Treatment-sensitive HIV,No C code
+Cobicistat,C97360
+Prevention and Treatment of Opportunistic Infection ,C15840
+Diagnosis,C15220
+Therapeutic Corticosteroid,C211
+Sufficient,C63351
+Investigational Treatment,C142589
+Lower Limit of Normal,C25555
+Efavirenz,C29027
+AIDS Encephalopathy, C3715
+HAART Treatment Duration,No C code
+Opportunistic Infection,C3289
+Other Malignancy,No C code
+3-drugs-in-1 pill,No C code
+Non-nucleoside Reverse Transcriptase Inhibitor,C97453
+Combination Pills with Pharmacologic Boosters,No C code
+Ritonavir,C1609
+Acceptable,C63350
+Undetectable,C111568
+Adult T-Cell Leukemia/Lymphoma, C3184
+Abnormal Liver Function Test,C122516
+Cytochrome P450 2C19 Inducer,No C code
+Cytochrome P450 2C19 Inhibitor,No C code
+Hemoglobin Measurement,C64848
+Hemoglobin,C16676
+Blood Transfusion,C15192
+Hemoglobin A1C to Hemoglobin Ratio Measurement,C111207
+Blood Glucose Measurement,C92744
+Serum Glucose Measurement,C61027
+Age-Years,C37908
+Autoimmune Hemolytic Anemia,C34378
+Idiopathic Thrombocytopenic Purpura,C3446
+Hemorrhage,C26791
+Hemoglobin Decreased,C80085
+Glucose Measurement,C105585
+Fasting Blood Sugar Measurement,C80400
+Hemolysis,C37965
+Glucose-6-Phosphate Dehydrogenase Deficiency,C98933
+Pyruvate Kinase Deficiency ,C99037
+Hemoglobinopathy ,C3092
+Hereditary Spherocytosis ,C97074
+Thalassemia C35069,C35069
+Haptoglobin Protein Measurement ,C74740
+Bone Marrow Involvement ,C8288
+Solid Neoplasm ,C9292
+Refractory Plasma Cell Myeloma ,C7024
+Recurrent Plasma Cell Myeloma,C7025
+Diabetes Mellitus,C2985
+Past 2 Weeks,C126890
+Within,C25282
+Anemia,C2869
