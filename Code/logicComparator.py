@@ -75,6 +75,10 @@ for i, _ in enumerate(patientData.values):
                 elif 'AND' in logicList[k] or "OR" in logicList[k]:
                     # convert uppercase ands and ors to lowercase for logical use later
                     logicList[k] = logicList[k].lower()
+                else:
+                    print("Error in code, value, and compOp conversion segment in the following logicList")
+                    print(logicList)
+                    exit()
                 # After we get the logical operator, the code, and the value, we get into the meat and potatoes
                 if "C25150" in code:  # age
                     if eval(str(patientData.AGE.values[i]) + compOp + str(value)):
@@ -110,8 +114,8 @@ for i, _ in enumerate(patientData.values):
             # datasets have the same trial ID, do we want to differentiate per trial?
             patientTrialEvaluation = eval(" ".join(logicList))
             if patientTrialEvaluation and ("Inclusion" in eligibilityFile.inclusion_indicator.values[j]):
-                matchResults.at[matchRow, "NCI_ID"] = "WBC_" + eligibilityFile.nci_id.values[j]
-                matchResults.at[matchRow, "NCT_ID"] = "WBC_" + eligibilityFile.nct_id.values[j]
+                matchResults.at[matchRow, "NCI_ID"] = eligibilityFile.nci_id.values[j]
+                matchResults.at[matchRow, "NCT_ID"] = eligibilityFile.nct_id.values[j]
                 matchResults.at[matchRow, "Patient_ID"] = patientData.PatientID.values[i]
                 matchRow += 1
 
