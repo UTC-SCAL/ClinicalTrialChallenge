@@ -1,7 +1,0 @@
-The following use '=' for value checking:
-	Cancer_Stage_Bool
-	Cancer_Site_Bool
-	Biomarker_Bool
-	Treatment_History_Bool
-
-PS_Bool uses =, <, >, <=, >=
