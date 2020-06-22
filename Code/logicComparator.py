@@ -4,15 +4,19 @@ import pandas
 patientData = pandas.read_csv("../SMC Challenge 6/Dataset 2 Simplified.csv")
 # The eligibility file you want to compare against the patient data
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_WBC_Trials_First.xlsx")
-eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Prior_Therapy_Trials_First.xlsx")
+# eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Prior_Therapy_Trials_First.xlsx")
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Platelets_Trials_First.xlsx")
+# eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Performance_Status_Trials_First.xlsx")
+# eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_HIV_Trials_First.xlsx")
+eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Hemoglobin_Trials_First.xlsx")
+
 eligibilityFile.NCIT = eligibilityFile.NCIT.astype(str)
 # Dataframe to save any matches
 matchResults = pandas.DataFrame(columns=["NCI_ID", "NCT_ID", "Patient_ID"])
 # Position marker for the match dataframe
 matchRow = 0
 
-for i, _ in enumerate(patientData.values[0:1]):
+for i, _ in enumerate(patientData.values):
     print("Patient " + str(i+1) + "/" + str(len(patientData)))
     for j, _ in enumerate(eligibilityFile.values):
         # Skip over our empties
@@ -168,4 +172,4 @@ for i, _ in enumerate(patientData.values[0:1]):
                 matchResults.at[matchRow, "Patient_ID"] = patientData.PatientID.values[i]
                 matchRow += 1
 
-matchResults.to_csv("../SMC Challenge 6/Prior Therapy Match Test 2.csv", index=False)
+matchResults.to_csv("../", index=False)
