@@ -3,12 +3,12 @@ import pandas
 # Read in the patient data
 patientData = pandas.read_csv("../SMC Challenge 6/Dataset 2 Simplified.csv")
 # The eligibility file you want to compare against the patient data
-# eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_WBC_Trials_First.xlsx")
+eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_WBC_Trials_First.xlsx")
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Prior_Therapy_Trials_First.xlsx")
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Platelets_Trials_First.xlsx")
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Performance_Status_Trials_First.xlsx")
 # eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_HIV_Trials_First.xlsx")
-eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Hemoglobin_Trials_First.xlsx")
+# eligibilityFile = pandas.read_excel("../SMC Challenge 6/eligibility criteria/Dataset1_Hemoglobin_Trials_First.xlsx")
 
 eligibilityFile.NCIT = eligibilityFile.NCIT.astype(str)
 # Dataframe to save any matches
@@ -162,9 +162,7 @@ for i, _ in enumerate(patientData.values):
 
             # How do we want to go about joining all of the different trials? Since some of the different eligibility
             # datasets have the same trial ID, do we want to differentiate per trial?
-            # patientTrialEvaluation = eval(" ".join(logicList))
             patientTrialEvaluation = " ".join(logicList)
-            print("Row: ", j, ":", patientTrialEvaluation)
             patientTrialEvaluation = eval(patientTrialEvaluation)
             if patientTrialEvaluation and ("Inclusion" in eligibilityFile.inclusion_indicator.values[j]):
                 matchResults.at[matchRow, "NCI_ID"] = eligibilityFile.nci_id.values[j]
@@ -172,4 +170,4 @@ for i, _ in enumerate(patientData.values):
                 matchResults.at[matchRow, "Patient_ID"] = patientData.PatientID.values[i]
                 matchRow += 1
 
-matchResults.to_csv("../", index=False)
+matchResults.to_csv("../SMC Challenge 6/WBC Matches.csv", index=False)
