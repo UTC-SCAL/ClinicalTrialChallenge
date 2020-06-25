@@ -33,9 +33,16 @@ for i in range(1, 101):
             uniqueNCI.append(elem)
         matchList = 0
     nciCounts = patientSelect.NCI_ID.value_counts()
+    nciTop10 = []
+    for j in range(0, 10):
+        try:
+            nciTop10.append(nciCounts.index[j])
+        except:
+            print("Trials for Patient ", i, " doesn't exceed 10")
+            break
 
     patientTrialsSelected.at[matchLoc, "Patient_ID"] = i
-    patientTrialsSelected.at[matchLoc, "Mode_Trial"] = nciCounts.index[0]
+    patientTrialsSelected.at[matchLoc, "Mode_Trial"] = nciTop10
     patientTrialsSelected.at[matchLoc, "Unique_Trials"] = uniqueNCI
     matchLoc += 1
 
